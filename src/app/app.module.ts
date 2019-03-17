@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PsicologaComponent } from './components/psicologa/psicologa.component';
 import { LocalizacionComponent } from './components/localizacion/localizacion.component';
 import { EspecialidadComponent } from './components/especialidad/especialidad.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { EspecialidadComponent } from './components/especialidad/especialidad.co
     HomeComponent,
     PsicologaComponent,
     LocalizacionComponent,
-    EspecialidadComponent
+    EspecialidadComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule
