@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare var M: any;
+declare let $: any;
 
 @Component({
   selector: 'app-navbar',
@@ -11,13 +11,12 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.materializeCodeInit();
+    this.jqueryCode();
   }
 
-  materializeCodeInit() {
-    document.addEventListener('DOMContentLoaded', () => {
-      const elems = document.querySelectorAll('.collapsible');
-      const instances = M.Collapsible.init(elems);
+  jqueryCode() {
+    $(document).ready(() => {
+      $('.dropdown-trigger').dropdown();
     });
   }
 }
