@@ -4,12 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
+import { PsicologaComponent } from './components/psicologa/psicologa.component';
+import { LocalizacionComponent } from './components/localizacion/localizacion.component';
+import { EspecialidadComponent } from './components/especialidad/especialidad.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    PsicologaComponent,
+    LocalizacionComponent,
+    EspecialidadComponent
   ],
   imports: [
     BrowserModule
