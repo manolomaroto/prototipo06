@@ -11,10 +11,13 @@
         <ul class="right hide-on-med-and-down">
             <li routerLinkActive="active"><a [routerLink]="['home']">Inicio</a></li>
             <li routerLinkActive="active"><a [routerLink]="['psicologa']">Psicologa</a></li>
-            <li routerLinkActive="active"><a [routerLink]="['localizacion']">Localizacion</a></li>
-            <li routerLinkActive="active"><a [routerLink]="['especialidad']">Especialidad</a></li>
+            <li routerLinkActive="active"><a class="dropdown-trigger" [routerLink]="['localizacion']" data-target="dropdown1">Localización<i class="material-icons right">arrow_drop_down</i></a></li>
+
+            <li routerLinkActive="active"><a [routerLink]="['especialidad']">Adultos</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['especialidad']">Adolescentes</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['especialidad']">Terapia pareja</a></li>
             <!-- Dropdown Trigger -->
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+
         </ul>
     </div>
 </nav>
