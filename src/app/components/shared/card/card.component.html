@@ -1,11 +1,11 @@
-<div class="col s12 m4" id="adultos">
+<div class="col s12 m4" *ngFor="let card of cards; let i = index">
     <div class="card hoverable">
         <div class="card-image">
-            <img class="responsive-img" src="assets/img/clouds.jpg" alt="Enlace adultos">
-            <a href="terapia-adultos.html" class="btn-floating halfway-fab waves-effect waves-light adultos"><i class="material-icons">add</i></a>
+            <img class="responsive-img" [src]="card.img" [alt]="card.title">
+            <a [routerLink]="['/especialidad', i]" routerLinkActive="router-link-active" class="btn-floating halfway-fab waves-effect waves-light adultos"><i class="material-icons">add</i></a>
         </div>
         <div class="card-content temas">
-            <span class="card-title">Adultos</span>
+            <span class="card-title"> {{ card.title }}</span>
         </div>
     </div>
 </div>

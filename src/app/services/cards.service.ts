@@ -10,12 +10,12 @@ export class CardsService {
     },
     {
         title: 'Adolescentes',
-        img: 'assets/img/clouds.jpg',
+        img: 'assets/img/backpack.jpg',
         link: 'terapia-adultos.html'
     },
     {
         title: 'Parejas',
-        img: 'assets/img/clouds.jpg',
+        img: 'assets/img/holding-hands.jpg',
         link: 'terapia-adultos.html'
     }];
 
