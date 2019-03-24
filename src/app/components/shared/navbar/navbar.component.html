@@ -1,9 +1,9 @@
 <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
+    <li><a [routerLink]="['/localizacion/0']">Miraflores</a></li>
+    <li><a [routerLink]="['/localizacion/1']">Madrid</a></li>
     <li class="divider"></li>
-    <li><a href="#!">three</a></li>
+    <li><a [routerLink]="['/localizacion/2']">Colmenar</a></li>
 </ul>
 <nav>
     <div class="nav-wrapper">
@@ -11,7 +11,7 @@
         <ul class="right hide-on-med-and-down">
             <li routerLinkActive="active"><a [routerLink]="['home']">Inicio</a></li>
             <li routerLinkActive="active"><a [routerLink]="['psicologa']">Psicologa</a></li>
-            <li routerLinkActive="active"><a class="dropdown-trigger" [routerLink]="['localizacion']" data-target="dropdown1">Localización<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li routerLinkActive="active"><a class="dropdown-trigger" data-target="dropdown1">Localización<i class="material-icons right">arrow_drop_down</i></a></li>
 
             <li routerLinkActive="active"><a [routerLink]="['/especialidad/0']">Adultos</a></li>
             <li routerLinkActive="active"><a [routerLink]="['/especialidad/1']">Adolescentes</a></li>

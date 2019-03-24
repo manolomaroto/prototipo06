@@ -6,6 +6,8 @@ import { APP_ROUTING } from './app.routes';
 
 // Servicios
 import { CardsService } from './services/cards.service';
+import { LocalizacionService } from './services/localizacion.service';
+
 
 
 // Componentes
@@ -34,7 +36,8 @@ import { CardComponent } from './components/shared/card/card.component';
     APP_ROUTING
   ],
   providers: [
-    CardsService
+    CardsService,
+    LocalizacionService
   ],
   bootstrap: [AppComponent]
 })

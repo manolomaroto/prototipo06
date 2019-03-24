@@ -9,7 +9,7 @@ import { EspecialidadComponent } from './components/especialidad/especialidad.co
 const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'psicologa', component: PsicologaComponent },
-    { path: 'localizacion', component: LocalizacionComponent },
+    { path: 'localizacion/:id', component: LocalizacionComponent },
     { path: 'especialidad/:id', component: EspecialidadComponent},
     { path: '**', pathMatch: 'full', redirectTo: 'home' },
 

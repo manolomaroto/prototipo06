@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import {  LocalizacionService } from '../../services/localizacion.service';
+
 
 @Component({
   selector: 'app-localizacion',
@@ -7,7 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocalizacionComponent implements OnInit {
 
-  constructor() { }
+  localizacion: any = {};
+
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private _localizacionService: LocalizacionService
+  ) { this.activatedRoute.params.subscribe( params => {
+      this.localizacion = _localizacionService.getLocalizacion( params['id']);
+    });
+  }
+
 
   ngOnInit() {
   }
