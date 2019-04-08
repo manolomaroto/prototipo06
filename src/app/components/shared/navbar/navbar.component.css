@@ -1,3 +1,17 @@
+.logo,
+.logopsicologa {
+    margin-bottom: 0px;
+}
+
+.logopsicologa figure {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 nav {
     background-color: #3DB3C7;
+}
+
+nav .brand-logo {
+    font-size: 1.7rem;
 }
