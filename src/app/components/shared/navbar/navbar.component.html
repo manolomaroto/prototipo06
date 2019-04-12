@@ -1,19 +1,18 @@
 <header class="container">
     <div class="row logo">
-        <div class="col s6 offset-s3 m6 offset-m3 l6 ">
+        <div class="col l6 s6 offset-s3">
             <figure>
                 <img class="responsive-img" src="../../../assets/img//logo.png" alt="Logo Psicología Miraflores" id="logoPsicologia">
             </figure>
         </div>
-        <div class="col s6 offset-s3 m6 l6  hide-on-med-and-down">
+        <div class="col l6 hide-on-med-and-down">
             <figure>
                 <img class="responsive-img" src="../../../assets/img//psicologaColegiada.png" alt="Psicóloga Colegiada">
             </figure>
         </div>
     </div>
 </header>
-<nav class="container">
-    <!-- Dropdown Structure -->
+<nav>
     <ul id="dropdown1" class="dropdown-content">
         <li><a [routerLink]="['/localizacion/1']">Madrid</a></li>
         <li><a [routerLink]="['/localizacion/2']">Colmenar</a></li>
@@ -22,27 +21,28 @@
     </ul>
     <div class="nav-wrapper">
         <a href="#!" class="brand-logo hide-on-large-only">Irene Gallego</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="left hide-on-med-and-down">
             <li routerLinkActive="active"><a [routerLink]="['home']">Inicio</a></li>
             <li routerLinkActive="active"><a [routerLink]="['psicologa']" class="psicologa">Psicologa</a></li>
-            <li routerLinkActive="active"><a class="dropdown-button dondeEstamos" href="#!" data-activates="dropdown1">Dónde estamos<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li routerLinkActive="active"><a class="dropdown-trigger dondeEstamos" href="#!" data-target="dropdown1">Dónde estamos<i class="material-icons right">arrow_drop_down</i></a></li>
             <li routerLinkActive="active"><a [routerLink]="['/especialidad/0']" class="adultos">Adultos</a></li>
             <li routerLinkActive="active"><a [routerLink]="['/especialidad/1']" class="adolescentes">Adolescentes</a></li>
             <li routerLinkActive="active"><a [routerLink]="['/especialidad/2']" class="pareja">Terapia pareja</a></li>
             <li routerLinkActive="active"><a href="http://blog.psicologiamiraflores.com" class="blog">Blog</a></li>
         </ul>
-        <ul class="side-nav" id="mobile-demo">
-            <li routerLinkActive="active"><a [routerLink]="['home']">Inicio</a></li>
-            <li routerLinkActive="active"><a [routerLink]="['psicologa']" class="psicologa">Psicologa</a></li>
-            <li routerLinkActive="active"><a [routerLink]="['/localizacion/0']" class="madrid">Consulta Madrid</a></li>
-            <li routerLinkActive="active"><a [routerLink]="['/localizacion/1']" class="colmenar">Consulta Colmenar</a></li>
-            <li routerLinkActive="active"><a [routerLink]="['/localizacion/2']" class="miraflores">Consulta Miraflores</a></li>
-            <li routerLinkActive="active"><a href="https://psicologiaonline.simplybook.it" onclick="handleOutboundLinkClicks(event)">Consulta online</a></li>
-            <li routerLinkActive="active"><a [routerLink]="['/especialidad/0']" class="adultos">Adultos</a></li>
-            <li routerLinkActive="active"><a [routerLink]="['/especialidad/1']" class="adolescentes">Infantil y adolescente</a></li>
-            <li routerLinkActive="active"><a [routerLink]="['/especialidad/2']" class="pareja">Terapia de pareja</a></li>
-            <li routerLinkActive="active"><a href="http://blog.psicologiamiraflores.com" class="blog">Blog</a></li>
-        </ul>
     </div>
 </nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li routerLinkActive="active"><a [routerLink]="['home']">Inicio</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['psicologa']" class="psicologa">Psicologa</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['/localizacion/0']" class="madrid">Consulta Madrid</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['/localizacion/1']" class="colmenar">Consulta Colmenar</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['/localizacion/2']" class="miraflores">Consulta Miraflores</a></li>
+    <li routerLinkActive="active"><a href="https://psicologiaonline.simplybook.it" onclick="handleOutboundLinkClicks(event)">Consulta online</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['/especialidad/0']" class="adultos">Adultos</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['/especialidad/1']" class="adolescentes">Infantil y adolescente</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['/especialidad/2']" class="pareja">Terapia de pareja</a></li>
+    <li routerLinkActive="active"><a href="http://blog.psicologiamiraflores.com" class="blog">Blog</a></li>
+</ul>
