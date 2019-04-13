@@ -15,3 +15,7 @@ nav {
 nav .brand-logo {
     font-size: 1.7rem;
 }
+
+.imagen-colegiada {
+    max-width: 130%;
+}
