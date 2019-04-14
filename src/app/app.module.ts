@@ -7,7 +7,7 @@ import { APP_ROUTING } from './app.routes';
 // Servicios
 import { CardsService } from './services/cards.service';
 import { LocalizacionService } from './services/localizacion.service';
-
+import { CookieService } from 'ngx-cookie-service';
 
 
 // Componentes
@@ -19,6 +19,7 @@ import { LocalizacionComponent } from './components/localizacion/localizacion.co
 import { EspecialidadComponent } from './components/especialidad/especialidad.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { CardComponent } from './components/shared/card/card.component';
+import { CookiesComponent } from './components/shared/cookies/cookies.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CardComponent } from './components/shared/card/card.component';
     LocalizacionComponent,
     EspecialidadComponent,
     BlogComponent,
-    CardComponent
+    CardComponent,
+    CookiesComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { CardComponent } from './components/shared/card/card.component';
   ],
   providers: [
     CardsService,
-    LocalizacionService
+    LocalizacionService,
+    CookieService
   ],
   bootstrap: [AppComponent]
 })
