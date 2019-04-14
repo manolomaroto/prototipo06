@@ -1,0 +1,16 @@
+#cajacookies {
+    background-color: rgba(200, 200, 200, 0.9);
+    width: 100%;
+}
+
+#botonAceptarCookies {
+    background-color: #3DB3C7;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    z-index: 9999;
+}
