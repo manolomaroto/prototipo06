@@ -20,6 +20,10 @@ import { EspecialidadComponent } from './components/especialidad/especialidad.co
 import { BlogComponent } from './components/blog/blog.component';
 import { CardComponent } from './components/shared/card/card.component';
 import { CookiesComponent } from './components/shared/cookies/cookies.component';
+import { FooterComponent } from './components/footer/footer.component';
+
+// Estilos
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -31,11 +35,13 @@ import { CookiesComponent } from './components/shared/cookies/cookies.component'
     EspecialidadComponent,
     BlogComponent,
     CardComponent,
-    CookiesComponent
+    CookiesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    AngularFontAwesomeModule
   ],
   providers: [
     CardsService,
