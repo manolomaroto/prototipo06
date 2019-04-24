@@ -21,10 +21,10 @@ import { BlogComponent } from './components/blog/blog.component';
 import { CardComponent } from './components/shared/card/card.component';
 import { CookiesComponent } from './components/shared/cookies/cookies.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AvisoLegalComponent } from './components/aviso-legal/aviso-legal.component';
 
 // Estilos
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +36,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     BlogComponent,
     CardComponent,
     CookiesComponent,
-    FooterComponent
+    FooterComponent,
+    AvisoLegalComponent
   ],
   imports: [
     BrowserModule,
