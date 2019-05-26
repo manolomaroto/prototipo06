@@ -1,0 +1,16 @@
+#listado li {
+    color: #252525;
+    list-style: inside;
+    line-height: 24px;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#listado li::before {
+    content: "\2714";
+    margin-right: .5em;
+}
+
+#listado li:last-child {
+    margin-bottom: 30px;
+}

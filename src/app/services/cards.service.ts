@@ -6,18 +6,21 @@ export class CardsService {
     private cards: Card[] = [{
         title: 'Adultos',
         img: 'assets/img/clouds.jpg',
+        dibujo : '../../assets/img/terapiaAdultos.jpg',
         link: 'terapia-adultos.html',
         desc: 'Nos gustaría concretar todas las posibles razones para empezar una terapia psicológica, pero es complicado porque'
     },
     {
         title: 'Adolescentes',
         img: 'assets/img/backpack.jpg',
+        dibujo : '../../assets/img/bulling.jpg',
         link: 'terapia-adultos.html',
         desc: 'Cuestiones que tratamos:Dificultades de relación. Problemas de conducta en casa y en el colegio, Manejo del enfado y la ira'
     },
     {
         title: 'Parejas',
         img: 'assets/img/holding-hands.jpg',
+        dibujo : '../../assets/img/pareja.jpg',
         link: 'terapia-adultos.html',
         desc: 'Los temas más comunes por los que las parejas acuden a terapia son:'
     }];
@@ -36,6 +39,7 @@ export class CardsService {
 export interface Card {
     title: string;
     img: string;
+    dibujo: string;
     link: string;
     desc: string;
 }
