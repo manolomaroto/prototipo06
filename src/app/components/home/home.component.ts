@@ -17,7 +17,10 @@ export class HomeComponent implements OnInit {
   jqueryCode() {
     $(document).ready(() => {
       $('.parallax').parallax();
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+      setInterval( () => $('.carousel').carousel('next'), 15000 );
     });
   }
+
 
 }

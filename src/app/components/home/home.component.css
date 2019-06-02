@@ -48,3 +48,39 @@ a.waves-effect.waves-light.btn-large {
     background-color: rgba(61, 179, 199, 0.7);
     padding: 18px;
 }
+
+#carousel-opiniones {
+    height: 170px !important;
+    margin: 0 10px;
+}
+
+.carousel-item-one {
+    background-color: hsla(189, 55%, 51%, 0.7)
+}
+
+.carousel-item-two {
+    background-color: hsla(189, 55%, 41%, 0.7)
+}
+
+.carousel-item-three {
+    background-color: hsla(189, 55%, 31%, 0.7)
+}
+
+.carousel-item-four {
+    background-color: hsla(189, 55%, 21%, 0.7)
+}
+
+#carousel-opiniones .carousel-item h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#carousel-opiniones.carousel.carousel-slider {
+    top: 30px;
+    left: 0;
+}
+
+#carousel-opiniones.carousel .indicators {
+    bottom: -20px;
+}
