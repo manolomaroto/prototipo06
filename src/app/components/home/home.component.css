@@ -84,3 +84,7 @@ a.waves-effect.waves-light.btn-large {
 #carousel-opiniones.carousel .indicators {
     bottom: -20px;
 }
+
+.carousel-item h2 {
+    padding: 0 10px;
+}
