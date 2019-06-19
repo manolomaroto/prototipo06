@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {  LocalizacionService } from '../../services/localizacion.service';
-
+declare let $: any;
 
 @Component({
   selector: 'app-localizacion',
@@ -22,6 +22,13 @@ export class LocalizacionComponent implements OnInit {
 
 
   ngOnInit() {
+    this.jqueryCode();
+  }
+
+  jqueryCode() {
+    $(document).ready(() => {
+      $('.collapsible').collapsible();
+    });
   }
 
 }
