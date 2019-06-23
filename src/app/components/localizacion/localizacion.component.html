@@ -2,11 +2,28 @@
 
     <div class="row">
         <div class="col s12 center-align">
-            <h1>Despacho de Madrid</h1>
+            <h1>Despacho de {{ localizacion.title }}</h1>
         </div>
     </div>
     <div class="hide-on-small-only">
-        <h2>Escondido en small</h2>
+        <div class="row">
+            <div class="col s12">
+                <h2 class="center-align">Consulta</h2>
+                <p>Imagen</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h2 class="center-align">Ubicación</h2>
+                <p>Mapa</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h2 class="center-align">Terapia</h2>
+                <p>Descripcion</p>
+            </div>
+        </div>
     </div>
     <div class="row hide-on-med-and-up center-align">
         <div class="row">
@@ -18,7 +35,7 @@
                             <div class="row">
                                 <div class="col s12">
                                     <p class="flow-text">
-                                        La consulta de Madrid-Goya nos permite recibir a los pacientes que residen en diferentes zonas de la capital.
+                                        {{ localizacion.descripcion }}
                                     </p>
                                 </div>
                             </div>
