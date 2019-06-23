@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {  LocalizacionService } from '../../services/localizacion.service';
+import { DomSanitizer } from '@angular/platform-browser';
 declare let $: any;
 
 @Component({
@@ -14,7 +15,8 @@ export class LocalizacionComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private _localizacionService: LocalizacionService
+    private _localizacionService: LocalizacionService,
+    public sanitizer: DomSanitizer
   ) { this.activatedRoute.params.subscribe( params => {
       this.localizacion = _localizacionService.getLocalizacion( params['id']);
     });

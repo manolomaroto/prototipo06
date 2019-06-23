@@ -9,19 +9,31 @@
         <div class="row">
             <div class="col s12">
                 <h2 class="center-align">Consulta</h2>
-                <p>Imagen</p>
+                <p class="flow-text">
+                    {{localizacion.despachoDesc}}
+                </p>
+                <div class="col s12 m9 offset-m2">
+                    <figure>
+                        <img class="responsive-img" src="{{ localizacion.fotos }}" alt="Terapia {{ localizacion.title }}">
+                    </figure>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col s12">
                 <h2 class="center-align">Ubicación</h2>
-                <p>Mapa</p>
+                <p class="flow-text"> {{ localizacion.ubicacionDesc}}</p>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <iframe src="{{ localizacion.ubicacion | safeUrl }}" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col s12">
                 <h2 class="center-align">Terapia</h2>
-                <p>Descripcion</p>
+                <p class="flow-text">{{ localizacion.terapiaDesc }}</p>
             </div>
         </div>
     </div>
@@ -35,14 +47,14 @@
                             <div class="row">
                                 <div class="col s12">
                                     <p class="flow-text">
-                                        {{ localizacion.descripcion }}
+                                        {{localizacion.despachoDesc }}
                                     </p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col s12">
                                     <figure>
-                                        <img class="responsive-img" src="images/despachoGoya.jpg" alt="Despacho Madrid">
+                                        <img class="responsive-img" src="{{ localizacion.fotos }}" alt="Terapia {{ localizacion.title }}">
                                     </figure>
                                 </div>
                             </div>
@@ -54,15 +66,13 @@
                             <div class="row">
                                 <div class="col s12">
                                     <p class="flow-text">
-                                        Gracias a su magnífica ubicación en la Calle Goya, en el corazón del Barrio de Salamanca, es muy sencillo su acceso desde diferentes puntos de la ciudad a través de metro (estación metro Goya, líneas 2 y 4), múltiples autobuses, taxis y parkings en las
-                                        inmediaciones.
+                                        {{ localizacion.ubicacionDesc}}
                                     </p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col s12">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.958101954402!2d-3.678575353117273!3d40.424740419117306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228bca1c2b39d%3A0x8b4ead1e5f6aeff1!2sCalle+de+Goya%2C+83%2C+28001+Madrid!5e0!3m2!1ses!2ses!4v1512760931794"
-                                        width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    <iframe src="{{ localizacion.ubicacion | safeUrl }}" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -73,8 +83,7 @@
                             <div class="row">
                                 <div class="col s12">
                                     <p class="flow-text">
-                                        Atendemos terapia individual para adultos, adolescentes y terapia de pareja. La terapia infantil en la actualidad se realiza en la consulta de Miraflores de la Sierra, dada sus características especiales y los materiales terapéuticos específicos necesarios
-                                        para su desarrollo.
+                                        {{ localizacion.terapiaDesc }}
                                     </p>
                                 </div>
                             </div>
