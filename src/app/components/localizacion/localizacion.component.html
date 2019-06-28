@@ -13,9 +13,12 @@
                     {{localizacion.despachoDesc}}
                 </p>
                 <div class="col s12 m9 offset-m2">
-                    <figure>
-                        <img class="responsive-img" src="{{ localizacion.fotos }}" alt="Terapia {{ localizacion.title }}">
-                    </figure>
+                    <div *ngIf="localizacion.title == 'Colmenar'; else otraLocalizacion">Content to render when condition is true.</div>
+                    <ng-template #otraLocalizacion>
+                        <figure>
+                            <img class="responsive-img" src="{{ localizacion.fotos }}" alt="Terapia {{ localizacion.title }}">
+                        </figure>
+                    </ng-template>
                 </div>
             </div>
         </div>
