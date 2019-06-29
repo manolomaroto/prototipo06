@@ -13,7 +13,29 @@
                     {{localizacion.despachoDesc}}
                 </p>
                 <div class="col s12 m9 offset-m2">
-                    <div *ngIf="localizacion.title == 'Colmenar'; else otraLocalizacion">Content to render when condition is true.</div>
+                    <div *ngIf="localizacion.title == 'Colmenar'; else otraLocalizacion">
+
+                        <div class="slider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="../../../assets/img/image1.JPG">
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/coworking-02.jpg">
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/coworking-024-web.jpg">
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/despacho-001-web.jpg">
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/despacho-003-web.jpg">
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                     <ng-template #otraLocalizacion>
                         <figure>
                             <img class="responsive-img" src="{{ localizacion.fotos }}" alt="Terapia {{ localizacion.title }}">

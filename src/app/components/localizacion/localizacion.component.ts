@@ -30,6 +30,7 @@ export class LocalizacionComponent implements OnInit {
   jqueryCode() {
     $(document).ready(() => {
       $('.collapsible').collapsible();
+      $('.slider').slider();
     });
   }
 
