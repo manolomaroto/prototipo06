@@ -43,7 +43,22 @@ export class LocalizacionService {
         terapiaDesc: `Atendemos terapia individual para adultos, adolescentes y terapia de pareja.
         La terapia infantil en la actualidad se realiza en la consulta de Miraflores de la Sierra,
         dada sus características especiales y los materiales terapéuticos específicos necesarios para su desarrollo.`
-    }];
+    }, {
+        title: 'Soto del Real',
+        despachoDesc: `La consulta de Soto del Real surge como fruto de la colaboración con la Clínica Médica El Real, para acercar
+         nuestro trabajo y facilitar el acceso a las personas residentes en el municipio de Soto del Real.`,
+        fotos : '../assets/img/clinicamedicaelReal.jpg',
+        ubicacion: `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.36261235574!2d-3.789086449473054!3d40.
+        75404867922586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd416321ca4337fd%3A0x1fe273c5ba6f67fc!2sCalle+Paular%2C+6%2C+
+        28791+Soto+del+Real%2C+Madrid!5e0!3m2!1ses!2ses!4v1561920658439!5m2!1ses!2ses`,
+        ubicacionDesc: `Clínica Médica El Real. C/ el Paular, 6. 28791 Soto del Real. Madrid. A escasos metros de la Plaza de la Villa y
+        parada de  autobús en las inmediaciones que comunican con otros municipios de la sierra: Manzanares del Real y Guadalix de
+        la Sierra.`,
+        terapiaDesc: `Atendemos terapia individual para adultos, adolescentes y terapia de pareja. La terapia infantil en la actualidad se
+         realiza en la consulta de Miraflores de la Sierra, dada sus características especiales y los materiales terapéuticos específicos
+         necesarios para su desarrollo.`
+    }
+];
 
     constructor() {}
 
