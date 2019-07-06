@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col s12 m9 offset-m2">
+        <div [className]="especialidad.title == 'Adultos' ? 'col s12 m9 offset-m2' : 'col m12 m9 offset-m3'">
             <figure>
                 <img class="responsive-img" src="{{ especialidad.dibujo }}" alt="Terapia {{ especialidad.title }}">
             </figure>

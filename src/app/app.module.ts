@@ -27,6 +27,7 @@ import { AvisoLegalComponent } from './components/aviso-legal/aviso-legal.compon
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AvisoCookiesComponent } from './components/aviso-cookies/aviso-cookies.component';
 import { SafePipe } from './pipes/url-safe.pipe';
+import { SliderComponent } from './shared/slider/slider.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { SafePipe } from './pipes/url-safe.pipe';
     FooterComponent,
     AvisoLegalComponent,
     AvisoCookiesComponent,
-    SafePipe
+    SafePipe,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

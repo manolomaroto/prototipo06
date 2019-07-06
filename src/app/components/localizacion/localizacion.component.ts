@@ -31,7 +31,6 @@ export class LocalizacionComponent implements OnInit {
     $(document).ready(() => {
       $('.collapsible').collapsible();
       $('.collapsible').collapsible('open', 0);
-      $('.slider').slider();
     });
   }
 
