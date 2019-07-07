@@ -15,7 +15,6 @@ export class CardComponent implements OnInit {
 
   ngOnInit() {
   this.cards = this._cardsService.getCards();
-  console.log(this.cards);
   }
 
 }
