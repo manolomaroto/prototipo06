@@ -48,7 +48,7 @@ export class CardsService {
         dibujo : '../../assets/img/bulling.jpg',
         link: 'terapia-adultos.html',
         desc: {
-            parrafos: [
+            title: [
                 `Cuestiones que tratamos:`
             ],
             listado: [
@@ -74,7 +74,7 @@ export class CardsService {
         dibujo : '../../assets/img/pareja.jpg',
         link: 'terapia-adultos.html',
         desc: {
-            parrafos: [
+            title: [
                 `Los temas más comunes por los que las parejas acuden a terapia son:`
             ],
             listado: [
