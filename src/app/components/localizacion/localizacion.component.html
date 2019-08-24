@@ -12,8 +12,8 @@
                 <p class="flow-text">
                     {{localizacion.despachoDesc}}
                 </p>
-                <div [className]="localizacion.title == 'Miraflores' ? 'col s12 m9 offset-m3' : 'col s12 m9 offset-m2'">
-                    <div *ngIf="localizacion.title == 'Colmenar'; else otraLocalizacion">
+                <div class="col s12 m9 offset-m2">
+                    <div *ngIf="localizacion.title == 'Colmenar' || localizacion.title == 'Miraflores'; else otraLocalizacion">
 
                         <app-slider></app-slider>
 
