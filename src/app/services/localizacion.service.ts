@@ -7,7 +7,7 @@ export class LocalizacionService {
         title: 'Miraflores',
         despachoDesc: `La consulta de Miraflores de la Sierra se consolida como la principal, siendo la primera que se fundó y la que
         nos da nuestro nombre Psicología Miraflores.`,
-        fotos : '../assets/img/despacho1.jpg',
+        fotos : '../assets/img/despacho-miraflores01.jpg',
         ubicacion: `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.784799633214!2d-3.767678048701841!3d40.810722539404914!
         2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4162223bdb92ed%3A0xe31c333fa19ecf90!2sTraves%C3%ADa+de+la+Luz%2C+5%2C+28792+
         Miraflores+de+la+Sierra%2C+Madrid!5e0!3m2!1ses!2ses!4v1512764117567`,

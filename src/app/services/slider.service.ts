@@ -11,8 +11,8 @@ export class SliderService {
     , '../assets/img/despacho-001-web.jpg', '../assets/img/despacho-003-web.jpg']
   }, {
     place: 'Miraflores',
-    images: ['../assets/img/image1.JPG', '../assets/img/coworking-02.jpg', '../assets/img/coworking-024-web.jpg'
-    , '../assets/img/despacho-001-web.jpg', '../assets/img/despacho-003-web.jpg']
+    images: ['../assets/img/despacho-miraflores06.jpg', '../assets/img/despacho-miraflores04.jpg', '../assets/img/despacho-miraflores05.jpg'
+    , '../assets/img/despacho-miraflores03.jpg', '../assets/img/despacho-miraflores01.jpg', '../assets/img/despacho-miraflores02.jpg']
   }
 
   ];

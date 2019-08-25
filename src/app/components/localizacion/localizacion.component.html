@@ -12,17 +12,22 @@
                 <p class="flow-text">
                     {{localizacion.despachoDesc}}
                 </p>
-                <div class="col s12 m9 offset-m2">
-                    <div *ngIf="localizacion.title == 'Colmenar' || localizacion.title == 'Miraflores'; else otraLocalizacion">
+                <div class="col s12 m9 offset-m2" [ngSwitch]="localizacion.title">
+                    <div *ngSwitchCase="'Colmenar'">
 
                         <app-slider [localization]="localizacion.title"></app-slider>
 
                     </div>
-                    <ng-template #otraLocalizacion>
-                        <figure>
-                            <img class="responsive-img valign-wrapper" src="{{ localizacion.fotos }}" alt="Terapia {{ localizacion.title }}">
-                        </figure>
-                    </ng-template>
+                    <div *ngSwitchCase="'Miraflores'">
+
+                        <app-slider [localization]="localizacion.title"></app-slider>
+
+                    </div>
+
+                    <figure *ngSwitchDefault>
+                        <img class="responsive-img valign-wrapper" src="{{ localizacion.fotos }}" alt="Terapia {{ localizacion.title }}">
+                    </figure>
+
                 </div>
             </div>
         </div>
