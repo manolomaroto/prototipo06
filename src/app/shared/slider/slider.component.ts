@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SliderService } from '../../services/slider.service';
 declare let $: any;
 
 @Component({
@@ -8,10 +9,23 @@ declare let $: any;
 })
 export class SliderComponent implements OnInit {
 
-  constructor() { }
+  sliderImages: any[] = [];
+  imagesSrc: any[] = [];
+  @Input() localization: any = '';
+
+  constructor( private placesImages: SliderService) {
+    this.sliderImages = placesImages.getSliderImages();
+   }
 
   ngOnInit() {
     this.jqueryCode();
+    for (const onePlace of this.sliderImages) {
+      if (onePlace.place === this.localization) {
+        onePlace.images.forEach(element => {
+          this.imagesSrc.push(element);
+        });
+      }
+    }
   }
 
   jqueryCode() {

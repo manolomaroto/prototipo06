@@ -1,19 +1,7 @@
 <div class="slider">
     <ul class="slides">
-        <li>
-            <img src="../../../assets/img/image1.JPG">
-        </li>
-        <li>
-            <img src="../../../assets/img/coworking-02.jpg">
-        </li>
-        <li>
-            <img src="../../../assets/img/coworking-024-web.jpg">
-        </li>
-        <li>
-            <img src="../../../assets/img/despacho-001-web.jpg">
-        </li>
-        <li>
-            <img src="../../../assets/img/despacho-003-web.jpg">
+        <li *ngFor="let imageSrc of imagesSrc">
+            <img class="responsive-img valign-wrapper" src="{{ imageSrc }}" alt="Foto slider">
         </li>
     </ul>
 </div>

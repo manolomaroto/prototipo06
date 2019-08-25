@@ -15,7 +15,7 @@
                 <div class="col s12 m9 offset-m2">
                     <div *ngIf="localizacion.title == 'Colmenar' || localizacion.title == 'Miraflores'; else otraLocalizacion">
 
-                        <app-slider></app-slider>
+                        <app-slider [localization]="localizacion.title"></app-slider>
 
                     </div>
                     <ng-template #otraLocalizacion>
