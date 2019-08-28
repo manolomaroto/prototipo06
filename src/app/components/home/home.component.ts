@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.jqueryCode();
+    this.javaScriptCode(document, 'script', 'zl-widget-s');
   }
 
   jqueryCode() {
@@ -22,5 +23,15 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  javaScriptCode($_x, _s, id) {
+      let js = $_x.getElementsByTagName(_s)[0];
+      const fjs = $_x.getElementsByTagName(_s)[0];
+      if (!$_x.getElementById(id)) {
+          js = $_x.createElement(_s);
+          js.id = id;
+          js.src = '//platform.docplanner.com/js/widget.js';
+          fjs.parentNode.insertBefore(js, fjs);
+      }
+  }
 
 }
