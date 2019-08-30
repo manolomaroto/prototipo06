@@ -19,3 +19,9 @@ nav .brand-logo {
 .imagen-colegiada {
     max-width: 130%;
 }
+
+@media only screen and (min-width: 993px) {
+    li a {
+        padding: 0 10px;
+    }
+}

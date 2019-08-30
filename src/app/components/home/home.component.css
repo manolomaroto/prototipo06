@@ -1,6 +1,6 @@
 .parallax-container {
     min-height: 300px;
-    height: 450px;
+    height: 370px;
     margin: 20px 0;
 }
 
@@ -13,17 +13,23 @@ a.waves-effect.waves-light.btn-large {
     background-color: rgba(61, 179, 199, 0.7);
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 993px) {
     .parallax-container .row {
         margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .parallax-container {
+        height: 500px;
     }
 }
 
 .botonesParallax {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "madrid soto" "colmenar online" "miraflores llamanos";
+    grid-template-rows: auto;
+    grid-template-areas: "madrid     reservar" "colmenar   reservar" "miraflores reservar" "soto       reservar" "online     reservar" "llamanos   reservar";
     grid-gap: 10px 30px;
     margin-top: 10px;
 }
@@ -78,4 +84,15 @@ a.waves-effect.waves-light.btn-large {
 
 .carousel-item h2 {
     padding: 0 10px;
+}
+
+.boton7 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.opinion-widget .branding {
+    background: rgba(61, 179, 199, 0.7);
 }
