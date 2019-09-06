@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, InjectionToken } from '@angular/core';
 declare let $: any;
 
 @Component({
@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.destroy();
     this.jqueryCode();
     this.javaScriptCode(document, 'script', 'zl-widget-s');
   }
@@ -24,14 +25,21 @@ export class HomeComponent implements OnInit {
   }
 
   javaScriptCode($_x, _s, id) {
-      let js = $_x.getElementsByTagName(_s)[0];
-      const fjs = $_x.getElementsByTagName(_s)[0];
-      if (!$_x.getElementById(id)) {
-          js = $_x.createElement(_s);
+    $(document).ready(() => {
+      let js = document.getElementsByTagName(_s)[0];
+      const fjs = document.getElementsByTagName(_s)[0];
+      if (!document.getElementById(id)) {
+          js = document.createElement(_s);
           js.id = id;
           js.src = '//platform.docplanner.com/js/widget.js';
           fjs.parentNode.insertBefore(js, fjs);
       }
-  }
 
+    });
+  }
+  destroy() {
+    if (document.getElementById('zl-widget-s')){
+      document.getElementById('zl-widget-s').parentNode.removeChild(document.getElementById('zl-widget-s'));
+    }
+  }
 }
