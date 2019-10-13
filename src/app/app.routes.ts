@@ -5,6 +5,7 @@ import { LocalizacionComponent } from './components/localizacion/localizacion.co
 import { EspecialidadComponent } from './components/especialidad/especialidad.component';
 import { AvisoLegalComponent } from './components/aviso-legal/aviso-legal.component';
 import { AvisoCookiesComponent } from './components/aviso-cookies/aviso-cookies.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 
 const ROUTES: Routes = [
@@ -14,6 +15,7 @@ const ROUTES: Routes = [
     { path: 'especialidad/:id', component: EspecialidadComponent},
     { path: 'avisoLegal', component: AvisoLegalComponent },
     { path: 'avisoCookies', component: AvisoCookiesComponent },
+    { path: 'blog', component: BlogComponent},
     { path: '**', pathMatch: 'full', redirectTo: 'home' },
 
 ];
