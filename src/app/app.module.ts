@@ -28,6 +28,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AvisoCookiesComponent } from './components/aviso-cookies/aviso-cookies.component';
 import { SafePipe } from './pipes/url-safe.pipe';
 import { SliderComponent } from './shared/slider/slider.component';
+import { BlogEntryComponent } from './components/blog/blog-entry/blog-entry.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,8 @@ import { SliderComponent } from './shared/slider/slider.component';
     AvisoLegalComponent,
     AvisoCookiesComponent,
     SafePipe,
-    SliderComponent
+    SliderComponent,
+    BlogEntryComponent
   ],
   imports: [
     BrowserModule,
