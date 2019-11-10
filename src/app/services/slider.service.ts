@@ -11,8 +11,9 @@ export class SliderService {
     , '../assets/img/despacho-001-web.jpg', '../assets/img/despacho-003-web.jpg']
   }, {
     place: 'Miraflores',
-    images: ['../assets/img/despacho-miraflores06.jpg', '../assets/img/despacho-miraflores04.jpg', '../assets/img/despacho-miraflores05.jpg'
-    , '../assets/img/despacho-miraflores03.jpg', '../assets/img/despacho-miraflores01.jpg', '../assets/img/despacho-miraflores02.jpg']
+    images: ['../assets/img/despacho-miraflores06.jpg', '../assets/img/despacho-miraflores04.jpg', '../assets/img/despacho-nuevo02.JPG'
+    , '../assets/img/despacho-miraflores03.jpg', '../assets/img/despacho-nuevo01.JPG', '../assets/img/despacho-nuevo03.JPG'
+    , '../assets/img/sala-espera01.JPG']
   }
 
   ];
