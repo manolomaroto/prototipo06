@@ -8,6 +8,7 @@ import { APP_ROUTING } from './app.routes';
 import { CardsService } from './services/cards.service';
 import { LocalizacionService } from './services/localizacion.service';
 import { CookieService } from 'ngx-cookie-service';
+import { BlogService } from './services/blog.service';
 
 
 // Componentes
@@ -55,7 +56,8 @@ import { BlogEntryComponent } from './components/blog/blog-entry/blog-entry.comp
   providers: [
     CardsService,
     LocalizacionService,
-    CookieService
+    CookieService,
+    BlogService
   ],
   bootstrap: [AppComponent]
 })
