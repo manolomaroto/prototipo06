@@ -1,0 +1,12 @@
+h1 {
+    font-size: 2.4rem;
+}
+
+::ng-deep p {
+    font-size: 1.416rem;
+    text-align: justify;
+}
+
+::ng-deep h2 {
+    font-size: 1.8rem;
+}

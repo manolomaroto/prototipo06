@@ -1,11 +1,11 @@
 <div class="row">
     <div class="col">
         <figure>
-            <img class="responsive-img" src="../../../assets/img/psicologa.JPG" alt="Psicologa">
+            <img class="responsive-img" [src]="post.image" alt="{{post.brief}}">
         </figure>
-        <h1>{{ post.title}}</h1>
-        <p class="flow-text">
-            {{ post.content }}
-        </p>
+        <h1 [innerHTML]="post.title"></h1>
+        <div class="flow-text" [innerHTML]="post.content">
+
+        </div>
     </div>
 </div>
