@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogService } from '../../services/blog.service';
+import { Router } from '@angular/router';
+import { NavigationEnd } from '@angular/router';
 
+declare var ga: (...args: any[]) => void;
 
 @Component({
   selector: 'app-blog',
@@ -11,8 +14,16 @@ export class BlogComponent implements OnInit {
 
   posts: any[] = [];
   constructor(
+    private router: Router,
     private blogService: BlogService
-  ) { }
+  ) {
+    this.router.events.subscribe(event => {
+    if (event instanceof NavigationEnd) {
+        ga('set', 'page', event.urlAfterRedirects);
+        ga('send', 'pageview');
+    }
+    });
+  }
 
   ngOnInit() {
     this.posts = this.blogService.getPosts();

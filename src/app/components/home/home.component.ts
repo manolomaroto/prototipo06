@@ -1,5 +1,8 @@
 import { Component, OnInit, InjectionToken } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavigationEnd } from '@angular/router';
 declare let $: any;
+declare var ga: (...args: any[]) => void;
 
 @Component({
   selector: 'app-home',
@@ -8,7 +11,17 @@ declare let $: any;
 })
 export class HomeComponent implements OnInit {
   cookieValue = '';
-  constructor() { }
+
+  constructor(
+    private router: Router,
+  ) {
+    this.router.events.subscribe(event => {
+    if (event instanceof NavigationEnd) {
+        ga('set', 'page', event.urlAfterRedirects);
+        ga('send', 'pageview');
+    }
+    });
+  }
 
   ngOnInit() {
     this.destroy();
