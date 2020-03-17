@@ -1,6 +1,9 @@
 <div class="parallax-container animated fadeIn slow">
     <div class="parallax"><img src="../../../assets/img/light-bulb.jpg"></div>
     <div class="container botonesParallax hide-on-small-only">
+        <div class="boton2">
+            <a href="https://psicologiaonline.simplybook.it" onclick="handleOutboundLinkClicks(event)" class="waves-effect waves-light btn-large valign-wrapper" id="btn-online"><i class="material-icons right">web</i>Terapia online</a>
+        </div>
         <div class="boton4">
             <a [routerLink]="['/localizacion/0']" class="waves-effect waves-light btn-large miraflores"><i class="material-icons right">landscape</i>Miraflores de la Sierra</a>
         </div>
@@ -12,11 +15,6 @@
         </div>
         <div class="boton1">
             <a [routerLink]="['/localizacion/1']" class="waves-effect waves-light btn-large madrid"><i class="material-icons right">location_city</i>Madrid - Goya</a>
-        </div>
-
-
-        <div class="boton2">
-            <a href="https://psicologiaonline.simplybook.it" onclick="handleOutboundLinkClicks(event)" class="waves-effect waves-light btn-large valign-wrapper" id="btn-online"><i class="material-icons right">web</i>Terapia online</a>
         </div>
 
         <div class="boton5">
@@ -68,6 +66,20 @@
                 </div>
             </a>
         </div>
+    </div>
+</div>
+<!-- Modal Trigger -->
+<a #myDiv id="abrirModal" class="waves-effect waves-light btn modal-trigger" href="#modal1" (click)="abrirModal()">Modal</a>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>SERVICIO ESPECIAL COVID-19</h4>
+        <p>Como parte de nuestro compromiso social, añadimos un nuevo servicio de terapia online para todas aquellas personas que presenten dificultades en el afrontamiento de la situación generada por la alarma sanitaria, con alto grado de sufrimiento psicológico
+            y malestar emocional. Realizaremos una primera sesión gratuita donde evaluaremos tu situación y plantearemos pautas de prevención y/o tratamiento. </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
     </div>
 </div>
 <div class="container animated fadeIn slow">

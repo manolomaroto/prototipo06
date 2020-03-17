@@ -1,4 +1,4 @@
-import { Component, OnInit, InjectionToken } from '@angular/core';
+import { Component, OnInit,ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavigationEnd } from '@angular/router';
 declare let $: any;
@@ -9,7 +9,8 @@ declare var ga: (...args: any[]) => void;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit  {
+  @ViewChild('myDiv') myDiv: ElementRef<HTMLElement>;
   cookieValue = '';
 
   constructor(
@@ -24,6 +25,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.myDiv.nativeElement.click();
     this.destroy();
     this.jqueryCode();
     this.javaScriptCode(document, 'script', 'zl-widget-s');
@@ -54,5 +56,9 @@ export class HomeComponent implements OnInit {
     if (document.getElementById('zl-widget-s')){
       document.getElementById('zl-widget-s').parentNode.removeChild(document.getElementById('zl-widget-s'));
     }
+  }
+
+  abrirModal() {
+    $('#modal1').modal();
   }
 }
