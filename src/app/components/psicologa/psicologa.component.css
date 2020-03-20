@@ -14,3 +14,12 @@
 #listado li:last-child {
     margin-bottom: 30px;
 }
+
+.terapia-online{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.terapia-online:hover {
+    opacity: 1;
+}
