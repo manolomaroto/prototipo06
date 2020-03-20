@@ -23,3 +23,10 @@
 .terapia-online:hover {
     opacity: 1;
 }
+
+@media (min-width:1250px){
+    .pie-foto {
+        max-width: 70%;
+    }
+
+}
