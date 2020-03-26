@@ -10,7 +10,7 @@ declare var ga: (...args: any[]) => void;
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit  {
-  @ViewChild('myDiv') myDiv: ElementRef<HTMLElement>;
+  // @ViewChild('myDiv') myDiv: ElementRef<HTMLElement>; /** Selector del modal */
   cookieValue = '';
 
   constructor(
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit  {
   }
 
   ngOnInit() {
-    this.myDiv.nativeElement.click();
+    // this.myDiv.nativeElement.click(); /** abrimos el modal programaticamente */
     this.destroy();
     this.jqueryCode();
     this.javaScriptCode(document, 'script', 'zl-widget-s');

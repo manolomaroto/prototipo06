@@ -11,7 +11,7 @@ declare var ga: (...args: any[]) => void;
 })
 export class PsicologaComponent implements OnInit {
 
-  constructor(private router: Router) { 
+  constructor(private router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
           ga('set', 'page', event.urlAfterRedirects);
