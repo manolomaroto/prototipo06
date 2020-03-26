@@ -29,9 +29,31 @@ a.waves-effect.waves-light.btn-large {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "madrid     reservar" "colmenar   reservar" "miraflores reservar" "soto       reservar" "online     reservar" "llamanos   reservar";
+    grid-template-areas: "online     reservar" "online   reservar" "llamanos reservar" "llamanos       reservar";
     grid-gap: 10px 30px;
     margin-top: 10px;
+}
+.boton1 {
+    grid-area: online;
+}
+
+.boton2 {
+    grid-area: llamanos;
+}
+
+.boton7 {
+    grid-area: reservar;
+}
+
+.boton1 .btn-large,.boton2 .btn-large{
+    height: 100%;
+    font-size: 1.5em;
+    padding-top: 30px;
+}
+
+.boton7 iframe{
+    max-width: none !important;
+    border: 10px solid green;
 }
 
 .sesion-online {
@@ -86,12 +108,6 @@ a.waves-effect.waves-light.btn-large {
     padding: 0 10px;
 }
 
-.boton7 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 5;
-}
 
 .opinion-widget .branding {
     background: rgba(61, 179, 199, 0.7);
