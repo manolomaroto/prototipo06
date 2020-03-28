@@ -23,6 +23,7 @@ import { CardComponent } from './components/shared/card/card.component';
 import { CookiesComponent } from './components/shared/cookies/cookies.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AvisoLegalComponent } from './components/aviso-legal/aviso-legal.component';
+import { FixedBottonComponent } from './components/shared/fixed-botton/fixed-botton.component';
 
 // Estilos
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -46,7 +47,8 @@ import { BlogEntryComponent } from './components/blog/blog-entry/blog-entry.comp
     AvisoCookiesComponent,
     SafePipe,
     SliderComponent,
-    BlogEntryComponent
+    BlogEntryComponent,
+    FixedBottonComponent
   ],
   imports: [
     BrowserModule,
