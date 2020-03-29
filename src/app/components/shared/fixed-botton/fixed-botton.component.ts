@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 declare let $: any;
+declare let M: any;
 
 @Component({
   selector: 'app-fixed-botton',
@@ -11,7 +12,8 @@ export class FixedBottonComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.javaScriptCode();
+    // this.javaScriptCode();
+    this.jqueryCode();
   }
 
   javaScriptCode() {
@@ -30,6 +32,12 @@ export class FixedBottonComponent implements OnInit {
         }
       }
 
+    });
+  }
+
+  jqueryCode() {
+    $(document).ready(() => {
+      M.AutoInit();
     });
   }
 

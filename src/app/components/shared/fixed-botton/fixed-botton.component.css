@@ -1,13 +1,9 @@
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-  }
+
+
+  .btn-floating.btn-large {
+    width: 80px;
+    height: 56px;
+    font-size: 12px;
+    background-color: #3DB3C7;
+}
   
