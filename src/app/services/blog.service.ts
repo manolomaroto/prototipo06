@@ -5,6 +5,37 @@ export class BlogService {
 
     private posts: any[] = [
         {
+            id: 2,
+            title: 'Sobre la tela de una araña...',
+            brief: 'Resumen de la entrada',
+            content: `<p style="text-align: justify;">¿A quién no le recuerda el título del post a la canción que todos hemos
+             cantado de pequeños en las excursiones de autobús?
+            </p>
+            <p style="text-align: justify;">"Un elefante se balanceaba sobre la tela de una araña, como veía que no se caía
+            fueron a llamar a otro elefante".</p>
+            <p>Bueno pues así es, en ocasiones cuando le damos muchas vueltas a un tema es como si poco a poco fuéramos formando
+             un gran tejido de pensamientos, relaciones entre ellos y sus sucesos hasta que, metafóricamente, el resultado es una
+              tela de araña.</p>
+            <p>Si volvemos a la estrofa de la canción que dice "como veía que no se caían fueron a llamar a otro elefante",
+             podemos derivar que en ese momento todo lo que hemos pensado tiene sentido, todo encaja así que continuamos añadiendo
+              argumentos a favor de nuestro tejido.</p>
+            <p>Pero ¿Que ocurre cuando queremos quitar una tela de araña de nuestra casa?. Pues, no se a vosotros pero yo puedo
+             pasar días viéndola hasta que la retiro y una vez que la quito siento pena del gran trabajo laborioso que tuvo la
+              araña para crear ese entretejido complejo pero tan efímero y débil a la vez.</p>
+             <p>Recientemente, usaba esta metáfora de la tela de araña con este toque personal y poniendo las equivalencias pertinentes
+              a la persona que tenía delante, durante una sesión con un paciente con un problema obsesivo grave (el conocido TOC en su
+                 vertiente más cognitiva) para poner delante como nuestra mente genera estructuras complejas de pensamiento que puede
+                  hacernos creer que son verdad.</p>
+            <p>Gracias por vuestra atención.</p>
+            <p>Un abrazo.</p>
+            <p>Irene</p>
+`,
+            image: 'assets/img/telaArania.jpg',
+            created_at: '12/12/2019',
+            user_id: '01',
+            category_id: 'psicologia'
+        },
+        {
             id: 1,
             title: 'Beneficios de la terapia online',
             brief: 'Resumen de la entrada',
