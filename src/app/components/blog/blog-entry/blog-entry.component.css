@@ -3,10 +3,25 @@ h1 {
 }
 
 ::ng-deep p {
-    font-size: 1.416rem;
+    font-size: 1.2rem;
     text-align: justify;
 }
 
 ::ng-deep h2 {
     font-size: 1.8rem;
+}
+
+.author{
+    color: #3DB3C7;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+time {
+    color: #757575;
+    font-size: .9rem;
+}
+
+.post-header{
+    border-bottom: 1px solid #eeeeee;
 }

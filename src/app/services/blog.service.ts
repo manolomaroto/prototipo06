@@ -5,6 +5,42 @@ export class BlogService {
 
     private posts: any[] = [
         {
+            id: 3,
+            title: 'Diario de un viaje',
+            brief: '',
+            content: `<p style="text-align: justify;">En tiempos de pandemia donde todos de alguna manera hemos desplegado mecanismos
+             de afrontamiento, más o menos funcionales, cobran aún más sentido para mi las enseñanzas de Darwin acerca de la selección
+              natural. <i>“No es la más fuerte de las especies la que sobrevive, tampoco es la más inteligente la que sobrevive. 
+              Es aquella que se adapta mejor al cambio”.</i>
+           </p>
+           <img class="responsive-img" src="assets/img/darwin-escribiendo.jpeg" alt="Darwin escribiendo">
+           <p style="text-align: justify;">Al poner este pensamiento en alto, uno de mis apreciados pacientes, comparte conmigo un libro
+            de su biblioteca adquirido por su padre en México en 1955: “Diario del viaje de un naturalista alrededor del mundo”, obra
+            publicada en 1839, mucho antes que “El origen de las especies” que sería la obra de Darwin más famosa y que cambiaría la
+             ciencia para siempre.</p>
+             <img class="responsive-img" src="assets/img/diarioViajeDarwin.jpeg" alt="">
+           <p>Con permiso de R. me gustaría compartir con vosotros un extracto de este manuscrito, e invitarte a nueva reflexión y que
+            cada uno pueda realizar una interpretación libre sobre esto que ya Darwin escribió hace un tiempo.</p>
+           <p><i>“Ejercitan estos viajes la paciencia, borran todo rastro de egoísmo, enseñan a elegir por uno mismo y a acomodarse a
+            todo; en una palabra dan las cualidades que distinguen a los marinos. También enseñan los viajes un poco a desconfiar,
+             pero permiten descubrir que hay en el mundo muchas personas de corazón excelente, dispuestas a serviros, aún cuando no
+              se las haya visto jamás ni deban volverse a encontrar nunca".</i></p>
+           <p>Y tú, ¿cómo llevas este viaje?</p>
+            <p>En un paradigma más actual, revisando el pensamiento contemporáneo, filósofos, sociólogos, psicólogos e investigadores de
+             las ciencias sociales en general, tratan de arrojar ideas acerca de la vivencia del COVID-19 en textos a los cuales remito
+              al lector interesado como son
+               <a href="https://www.elextremosur.com/files/content/23/23684/sopa-de-wuhan.pdf">Sopa de Wuhan</a>
+               o <a href="https://drive.google.com/file/d/1k-YzHu9LgPajOuqz8WS5XKjfbj-EqAvM/view">La Fiebre</a>.</p>
+           <p>Deseo que tú y los tuyos estéis bien.</p>
+           <p>Un abrazo.</p>
+           `,
+            image: 'assets/img/cuaderno.jpeg',
+            created_at: '17/03/2020',
+            user_id: '01',
+            category_id: 'psicologia',
+            author: 'Irene Gallego'
+        },
+        {
             id: 2,
             title: 'Sobre la tela de una araña...',
             brief: 'Resumen de la entrada',
@@ -28,12 +64,12 @@ export class BlogService {
                   hacernos creer que son verdad.</p>
             <p>Gracias por vuestra atención.</p>
             <p>Un abrazo.</p>
-            <p>Irene</p>
-`,
-            image: 'assets/img/telaArania.jpg',
-            created_at: '12/12/2019',
+            `,
+            image: 'assets/img/telaArania02.jpg',
+            created_at: '12/04/2020',
             user_id: '01',
-            category_id: 'psicologia'
+            category_id: 'psicologia',
+            author: 'Irene Gallego'
         },
         {
             id: 1,
@@ -83,9 +119,10 @@ export class BlogService {
               a la consulta presencial. Así que ya sabes, si quieres probar la terapia en linea, te espero a solo un
               <a href="https://psicologiaonline.simplybook.it/v2/"> clic</a> de distancia.`,
             image: 'assets/img/terapiaOnline.jpg',
-            created_at: '12/12/2019',
+            created_at: '22/03/2020',
             user_id: '01',
-            category_id: 'psicologia'
+            category_id: 'psicologia',
+            author: 'Irene Gallego'
         }
     ];
 

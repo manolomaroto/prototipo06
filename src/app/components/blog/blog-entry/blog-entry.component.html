@@ -1,11 +1,16 @@
-<div class="row">
-    <div class="col">
-        <figure>
-            <img class="responsive-img" [src]="post.image" alt="{{post.brief}}">
-        </figure>
-        <h1 [innerHTML]="post.title"></h1>
-        <div class="flow-text" [innerHTML]="post.content">
-
-        </div>
+<div class="row post-header">   
+    <h1 [innerHTML]="post.title"></h1>
+    <figure >
+        <img class="responsive-img" [src]="post.image" alt="{{post.brief}}">
+    </figure>
+    <div class="row">
+        <time class="col s3 m2" [dateTime]="post.created_at">{{post.created_at}}</time>
+        <div class="author col s4 m3" [innerHTML]="post.author"></div>
     </div>
 </div>
+<div class="row">
+    <div class="col m10 push-m2 s12">
+        <p class="flow-text"  [innerHTML]="post.content"></p>
+    </div>
+</div>
+    
