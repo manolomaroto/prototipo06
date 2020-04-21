@@ -5,6 +5,26 @@ export class BlogService {
 
     private posts: any[] = [
         {
+            id: 4,
+            title: 'Afrontamiento psicológico confinamiento',
+            brief: '',
+            content: `<p style="text-align: justify;">Psicología Miraflores ha participado
+             <a href="https://anchor.fm/irene236/episodes/Afrontamiento-psicolgico-confinamiento-ed0sec">
+              en el primer Podcast de Villa de Miraflores</a>
+             de la Sierra. La entrevista, dirigida por Roberto Blasco, Concejal de Deportes, Infancia, y Juventud del Ayuntamiento de
+              Miraflores de la Sierra, versa sobre algunas cuestiones derivadas a la pandemia del COVID-19. Trataremos de dar respuesta
+               a cuestiones relativas a como se está afrontando el confinamiento y la alarma sanitaria a nivel psicológico.  </i>
+           </p>
+           <p>Esperando que la escucha sea de tu agrado, te saluda atentamente.</p>
+           <p>Irene Gallego</p>
+           `,
+            image: 'assets/img/podcast-confinamiento.jpeg',
+            created_at: '22/03/2020',
+            user_id: '01',
+            category_id: 'psicologia',
+            author: 'Irene Gallego'
+        },
+        {
             id: 3,
             title: 'Diario de un viaje',
             brief: '',
