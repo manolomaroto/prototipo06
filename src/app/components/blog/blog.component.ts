@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BlogService } from '../../services/blog.service';
 import { Router } from '@angular/router';
 import { NavigationEnd } from '@angular/router';
+import { BlogEntryModel } from '../../models/blog.model';
 
 declare var ga: (...args: any[]) => void;
 
@@ -13,6 +14,9 @@ declare var ga: (...args: any[]) => void;
 export class BlogComponent implements OnInit {
 
   posts: any[] = [];
+
+  // entry =  new BlogEntryModel();
+
   constructor(
     private router: Router,
     private blogService: BlogService
@@ -26,7 +30,9 @@ export class BlogComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.posts = this.blogService.getPosts();
+    this.blogService.getPosts().subscribe( resp => {
+      this.posts = resp;
+    });
   }
 
 }

@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 // Rutas
 import { APP_ROUTING } from './app.routes';
+import { HttpClientModule } from '@angular/common/http';
+
 
 // Servicios
 import { CardsService } from './services/cards.service';
@@ -53,7 +55,8 @@ import { BlogEntryComponent } from './components/blog/blog-entry/blog-entry.comp
   imports: [
     BrowserModule,
     APP_ROUTING,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    HttpClientModule
   ],
   providers: [
     CardsService,
