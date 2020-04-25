@@ -5,6 +5,40 @@ export class BlogService {
 
     private posts: any[] = [
         {
+            id: 5,
+            title: 'Culpa, perdón y reparación',
+            brief: '',
+            content: `<p>Los seres humanos no venimos al mundo con un manual de instrucciones. La mayoría tenemos
+             que aprender en carne propia cómo los procesos psicológicos normales se convierten en trampas que
+              terminamos por caer.</p>
+           <p>Es inevitable que el sentimiento de culpa se active en ciertas circunstancias. Creo que no hay
+            duelo sin algo de culpa o de revisión de lo que podíamos haber hecho para que NO ocurriera lo sucedido,
+             aunque a nivel objetivo no hubiese nada que hacer.</p>
+            <p>Ante esas circunstancias lo adecuado es que con todo el respeto, rechacemos las invitaciones de nuestra
+             mente para hacernos daño a nosotros mismos: "Si hubiera hecho...","Si me hubiese dado cuenta antes", "Debería..."</p>
+             <p>Si por el contrario, mordemos el anzuelo de la culpa con esos u otros mandatos, ocurrirá que cada vez que nos
+              movamos ante el recuerdo nos haremos daño , y esto incluye exponernos a situaciones , lugares,
+               objetos de vinculación...etc.
+             </p>
+             <p>Por todo ello, para liberarnos del anzuelo deberíamos soltar de ambas partes y hacer un proceso de perdón
+              a nosotros mismos por habernos excedido en la crítica.</p>
+              <p>
+              La etiología de "perdonar" significa "donar lo que hubo antes". El perdón es, en realidad, un regalo que te haces
+               a ti mismo no a los sucesos ni a las personas que te causaron dolor en la vida.
+              </p>
+              <p>Como terapeuta, guardo especial cariño a esos pacientes en procesos de duelo complicado en los que hubo
+               gran sufrimiento y acompañamiento.</p>
+               <p>Cuando sea el momento empezamos.</p>
+            <p>Un abrazo,</p>
+           <p>Irene Gallego</p>
+           `,
+            image: 'assets/img/culpa-perdon-reparacion.jpeg',
+            created_at: '25/03/2020',
+            user_id: '01',
+            category_id: 'psicologia',
+            author: 'Irene Gallego'
+        },
+        {
             id: 4,
             title: 'Afrontamiento psicológico confinamiento',
             brief: '',
@@ -13,7 +47,7 @@ export class BlogService {
               en el primer Podcast de Villa de Miraflores</a>
              de la Sierra. La entrevista, dirigida por Roberto Blasco, Concejal de Deportes, Infancia, y Juventud del Ayuntamiento de
               Miraflores de la Sierra, versa sobre algunas cuestiones derivadas a la pandemia del COVID-19. Trataremos de dar respuesta
-               a cuestiones relativas a como se está afrontando el confinamiento y la alarma sanitaria a nivel psicológico.  </i>
+               a cuestiones relativas a como se está afrontando el confinamiento y la alarma sanitaria a nivel psicológico.
            </p>
            <p>Esperando que la escucha sea de tu agrado, te saluda atentamente.</p>
            <p>Irene Gallego</p>
@@ -30,8 +64,8 @@ export class BlogService {
             brief: '',
             content: `<p style="text-align: justify;">En tiempos de pandemia donde todos de alguna manera hemos desplegado mecanismos
              de afrontamiento, más o menos funcionales, cobran aún más sentido para mi las enseñanzas de Darwin acerca de la selección
-              natural. <i>“No es la más fuerte de las especies la que sobrevive, tampoco es la más inteligente la que sobrevive. 
-              Es aquella que se adapta mejor al cambio”.</i>
+              natural. <i>“No es la más fuerte de las especies la que sobrevive, tampoco es la más inteligente la que sobrevive.
+             Es aquella que se adapta mejor al cambio”.</i>
            </p>
            <img class="responsive-img" src="assets/img/darwin-escribiendo.jpeg" alt="Darwin escribiendo">
            <p style="text-align: justify;">Al poner este pensamiento en alto, uno de mis apreciados pacientes, comparte conmigo un libro
