@@ -6,7 +6,7 @@ import { BlogEntryModel } from '../models/blog.model';
 @Injectable()
 export class BlogService {
 
-    private url = 'https://fir-fotos-692dd.firebaseio.com/blogEntry.json';
+    private url = 'https://fir-fotos-692dd.firebaseio.com/blogEntries.json';
 
     constructor( private http: HttpClient ) {}
 
