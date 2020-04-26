@@ -8,6 +8,6 @@ export class BlogEntryModel {
     image: string;
     createdAt: string;
     userId: string;
-    categoryId: string;
+    categories: string;
     author: string;
 }

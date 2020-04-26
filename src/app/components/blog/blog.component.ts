@@ -14,6 +14,7 @@ declare var ga: (...args: any[]) => void;
 export class BlogComponent implements OnInit {
 
   posts: any[] = [];
+  cargando = false;
 
   // entry =  new BlogEntryModel();
 
@@ -30,8 +31,11 @@ export class BlogComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.cargando = true;
     this.blogService.getPosts().subscribe( resp => {
       this.posts = resp;
+      this.posts.reverse();
+      this.cargando = false;
     });
   }
 
