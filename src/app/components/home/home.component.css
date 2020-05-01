@@ -21,7 +21,10 @@ a.waves-effect.waves-light.btn-large {
 
 @media screen and (max-width: 600px) {
     .parallax-container {
-        height: 500px;
+        height: 530px;
+    }
+    .cita-movil{
+        font-size: 1.2em;
     }
 }
 
@@ -29,30 +32,36 @@ a.waves-effect.waves-light.btn-large {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "online     reservar" "online   reservar" "llamanos reservar" "llamanos       reservar";
-    grid-gap: 10px 30px;
-    margin-top: 10px;
+    grid-template-areas: "reservar  presencial" "reservar presencial" "reservar resenias" "reservar resenias";
+    grid-gap: 1vh 30px;
+    margin-top: 50px;
 }
 .boton1 {
-    grid-area: online;
+    grid-area: presencial;
+    height: 12vh;
 }
 
 .boton2 {
-    grid-area: llamanos;
+    grid-area: resenias;
+    height: 12vh;
 }
 
 .boton7 {
     grid-area: reservar;
+    height: 25vh;
 }
 
-.boton1 .btn-large,.boton2 .btn-large{
+.boton1 .btn-large,.boton2 .btn-large, .boton7 .btn-large{
     height: 100%;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
-.boton7 iframe{
-    max-width: none !important;
-    border: 10px solid green;
+.boton2 a{
+    padding-top: 3vh;;
+}
+
+.boton7 a{
+    padding-top: 5vh;
 }
 
 .sesion-online {

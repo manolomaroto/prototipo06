@@ -26,7 +26,6 @@ export class HomeComponent implements OnInit  {
 
   ngOnInit() {
     // this.myDiv.nativeElement.click(); /** abrimos el modal programaticamente */
-    this.destroy();
     this.jqueryCode();
     this.javaScriptCode(document, 'script', 'zl-widget-s');
   }
@@ -51,11 +50,6 @@ export class HomeComponent implements OnInit  {
       }
 
     });
-  }
-  destroy() {
-    if (document.getElementById('zl-widget-s')){
-      document.getElementById('zl-widget-s').parentNode.removeChild(document.getElementById('zl-widget-s'));
-    }
   }
 
   abrirModal() {

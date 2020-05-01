@@ -33,6 +33,7 @@ import { AvisoCookiesComponent } from './components/aviso-cookies/aviso-cookies.
 import { SafePipe } from './pipes/url-safe.pipe';
 import { SliderComponent } from './shared/slider/slider.component';
 import { BlogEntryComponent } from './components/blog/blog-entry/blog-entry.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +51,8 @@ import { BlogEntryComponent } from './components/blog/blog-entry/blog-entry.comp
     SafePipe,
     SliderComponent,
     BlogEntryComponent,
-    FixedBottonComponent
+    FixedBottonComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
