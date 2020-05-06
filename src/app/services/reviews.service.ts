@@ -6,7 +6,6 @@ import {HttpParams} from '@angular/common/http';
 
 @Injectable()
 export class ReviewsService {
-    private key = 'AIzaSyB4p-S9kEXX97wIcNNLQXQWVHZ-xrZjCIM';
     private iDMiraflores = 'ChIJj0mYOyJiQQ0RdGZeJTtnrm8';
     private iDSoto = 'ChIJox1I3GNjQQ0Ra_oTnbhbauc';
     private iDColmenar = 'ChIJm8P7Qt59QQ0RqwrUSpJVXek';
