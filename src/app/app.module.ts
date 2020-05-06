@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 
 // Rutas
 import { APP_ROUTING } from './app.routes';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 
 
 // Servicios
@@ -11,6 +11,7 @@ import { CardsService } from './services/cards.service';
 import { LocalizacionService } from './services/localizacion.service';
 import { CookieService } from 'ngx-cookie-service';
 import { BlogService } from './services/blog.service';
+import { ReviewsService } from './services/reviews.service';
 
 
 // Componentes
@@ -34,6 +35,11 @@ import { SafePipe } from './pipes/url-safe.pipe';
 import { SliderComponent } from './shared/slider/slider.component';
 import { BlogEntryComponent } from './components/blog/blog-entry/blog-entry.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
+
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
+
+registerLocaleData(localeEs);
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,13 +64,16 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
     BrowserModule,
     APP_ROUTING,
     AngularFontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [
     CardsService,
     LocalizacionService,
     CookieService,
-    BlogService
+    BlogService,
+    ReviewsService,
+    { provide: LOCALE_ID, useValue: 'es' },
   ],
   bootstrap: [AppComponent]
 })

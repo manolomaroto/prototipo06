@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ReviewsService } from '../../services/reviews.service';
+
 declare let $: any;
 
 @Component({
@@ -8,11 +10,18 @@ declare let $: any;
 })
 export class ReviewsComponent implements OnInit {
 
-  constructor() { }
+  constructor( private reviewsService: ReviewsService) { }
+
+  reviews: any[] = [];
 
   ngOnInit() {
     this.destroy();
     this.javaScriptCode(document, 'script', 'zl-widget-s');
+/*     this.reviewsService.getReviews().subscribe( resp => {
+      console.log(resp);
+      this.reviews = resp;
+    }); */
+    this.reviews = this.reviewsService.getReviews();
   }
 
   javaScriptCode($_x, _s, id) {
