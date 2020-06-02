@@ -132,3 +132,8 @@ a.waves-effect.waves-light.btn-large {
 #modal1 p {
     font-weight: bold;
 }
+
+
+.btn-large {
+    line-height: 40px;
+}
