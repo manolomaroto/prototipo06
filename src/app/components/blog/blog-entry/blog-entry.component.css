@@ -25,3 +25,16 @@ time {
 .post-header{
     border-bottom: 1px solid #eeeeee;
 }
+
+.post-entry {
+    max-height: 40vh;
+    overflow: hidden;
+}
+
+.image-entry{
+    margin-top: 35px;
+}
+
+.btn {
+    background-color:#3DB3C7;;
+}

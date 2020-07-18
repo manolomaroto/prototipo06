@@ -1,16 +1,22 @@
 <div class="row post-header">   
     <h1 [innerHTML]="post.title"></h1>
-    <figure >
-        <img class="responsive-img" [src]="post.image" alt="{{post.brief}}">
-    </figure>
+    <div class="row">
+        <div class="col m4 s12">
+            <figure >
+                <img class="responsive-img image-entry" [src]="post.image" alt="{{post.brief}}">
+            </figure>
+        </div>
+        <div class="col m8 s12">
+            
+            <p class="flow-text post-entry"  [innerHTML]="post.content"></p>
+        </div>
+    </div>
+
     <div class="row">
         <time class="col s3 m2" [dateTime]="post.createdAt">{{post.createdAt}}</time>
         <div class="author col s4 m3" [innerHTML]="post.author"></div>
+        <a class="waves-effect waves-light btn" [routerLink]="['/blog/post.id']">Seguir leyendo</a>
     </div>
 </div>
-<div class="row">
-    <div class="col m10 push-m2 s12">
-        <p class="flow-text"  [innerHTML]="post.content"></p>
-    </div>
-</div>
+
     
