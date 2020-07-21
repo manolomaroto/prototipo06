@@ -38,6 +38,7 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
 
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
+import { CompliteEntryComponent } from './components/blog/complite-entry/complite-entry.component';
 
 registerLocaleData(localeEs);
 @NgModule({
@@ -58,7 +59,8 @@ registerLocaleData(localeEs);
     SliderComponent,
     BlogEntryComponent,
     FixedBottonComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    CompliteEntryComponent
   ],
   imports: [
     BrowserModule,

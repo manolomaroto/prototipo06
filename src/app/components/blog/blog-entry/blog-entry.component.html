@@ -15,7 +15,7 @@
     <div class="row">
         <time class="col s3 m2" [dateTime]="post.createdAt">{{post.createdAt}}</time>
         <div class="author col s4 m3" [innerHTML]="post.author"></div>
-        <a class="waves-effect waves-light btn" [routerLink]="['/blog/post.id']">Seguir leyendo</a>
+        <a class="waves-effect waves-light btn" [routerLink]="['/entry/' + post.id]">Seguir leyendo</a>
     </div>
 </div>
 
