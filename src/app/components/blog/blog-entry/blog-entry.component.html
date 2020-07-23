@@ -1,21 +1,21 @@
-<div class="row post-header">   
+<div class="row post-header animated fadein slow">   
     <h1 [innerHTML]="post.title"></h1>
     <div class="row">
-        <div class="col m4 s12">
+        <div [ngClass]="{'col m4 s12': !styleExp}">
             <figure >
                 <img class="responsive-img image-entry" [src]="post.image" alt="{{post.brief}}">
             </figure>
         </div>
-        <div class="col m8 s12">
+        <div [ngClass]="{'col m8 s12': !styleExp}">
             
-            <p class="flow-text post-entry"  [innerHTML]="post.content"></p>
+            <p class="flow-text post-entry" [innerHTML]="post.content" [ngClass]="{'post-entry-complite': styleExp}"></p>
         </div>
     </div>
 
     <div class="row">
         <time class="col s3 m2" [dateTime]="post.createdAt">{{post.createdAt}}</time>
         <div class="author col s4 m3" [innerHTML]="post.author"></div>
-        <a class="waves-effect waves-light btn" [routerLink]="['/entry/' + post.id]">Seguir leyendo</a>
+        <a class="waves-effect waves-light btn" (click)="cambiarEstilos()">{{ textButton }}</a>
     </div>
 </div>
 

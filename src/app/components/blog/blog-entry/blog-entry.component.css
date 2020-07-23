@@ -31,6 +31,11 @@ time {
     overflow: hidden;
 }
 
+.post-entry-complite {
+    max-height: 100%;
+    overflow: visible;
+}
+
 .image-entry{
     margin-top: 35px;
 }
