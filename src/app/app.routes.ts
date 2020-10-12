@@ -7,7 +7,6 @@ import { AvisoLegalComponent } from './components/aviso-legal/aviso-legal.compon
 import { AvisoCookiesComponent } from './components/aviso-cookies/aviso-cookies.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
-import { CompliteEntryComponent } from './components/blog/complite-entry/complite-entry.component';
 
 
 const ROUTES: Routes = [
@@ -18,7 +17,6 @@ const ROUTES: Routes = [
     { path: 'avisoLegal', component: AvisoLegalComponent },
     { path: 'avisoCookies', component: AvisoCookiesComponent },
     { path: 'blog', component: BlogComponent},
-    { path: 'entry/:id', component: CompliteEntryComponent},
     { path: 'reviews', component: ReviewsComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' },
 
