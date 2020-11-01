@@ -13,7 +13,7 @@ declare var ga: (...args: any[]) => void;
 })
 export class BlogComponent implements OnInit {
 
-  posts: any[] = [];
+  posts: BlogEntryModel[] = [];
   cargando = false;
 
   // entry =  new BlogEntryModel();
