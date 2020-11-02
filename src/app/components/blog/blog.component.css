@@ -1,3 +1,8 @@
 .loader {
     padding-top: 100px;
 }
+
+.pagination li.active a {
+    color: #fff;
+    background-color: #3DB3C7;
+}

@@ -14,6 +14,10 @@ declare var ga: (...args: any[]) => void;
 export class BlogComponent implements OnInit {
 
   posts: BlogEntryModel[] = [];
+  postsPagination: BlogEntryModel[][] = [];
+  indexPosts = 0;
+  SHOWED_POSTS = 5;
+  numberOfPaginations: number;
   cargando = false;
 
   // entry =  new BlogEntryModel();
@@ -33,10 +37,33 @@ export class BlogComponent implements OnInit {
   ngOnInit() {
     this.cargando = true;
     this.blogService.getPosts().subscribe( resp => {
-      this.posts = resp;
-      this.posts.reverse();
+      resp.reverse();
+      this.pagination(resp);
       this.cargando = false;
     });
+  }
+
+  navigationPagination(e) {
+    if((Number(e.target.innerHTML) -1) > this.indexPosts) {
+      if(this.indexPosts +1 <= this.postsPagination.length - 1){
+        this.indexPosts += 1;
+      }
+    }
+    if((Number(e.target.innerHTML) -1) < this.indexPosts) {
+      if(this.indexPosts - 1 >= 0){
+        this.indexPosts -= 1;
+      }   
+    }
+    this.posts = this.postsPagination[this.indexPosts];
+  }
+
+  pagination(posts) {
+    for(let i = 0; i < posts.length; i+= this.SHOWED_POSTS) {
+      let arrayChunk = posts.slice(i, i + this.SHOWED_POSTS);
+        this.postsPagination.push(arrayChunk);
+    }
+    this.numberOfPaginations = this.postsPagination.length;
+    this.posts = this.postsPagination[this.indexPosts];
   }
 
 }
