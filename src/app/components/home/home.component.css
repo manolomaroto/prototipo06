@@ -32,23 +32,20 @@ a.waves-effect.waves-light.btn-large {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "reservar  presencial" "reservar presencial" "reservar resenias" "reservar resenias";
+    grid-template-areas: "reservar resenias" "reservar resenias";
     grid-gap: 1vh 30px;
     margin-top: 50px;
-}
-.boton1 {
-    grid-area: presencial;
-    height: 12vh;
 }
 
 .boton2 {
     grid-area: resenias;
-    height: 12vh;
+    height: 35vh;
+    font-size: 2rem;
 }
 
 .boton7 {
     grid-area: reservar;
-    height: 25vh;
+    height: 35vh;
 }
 
 .boton1 .btn-large,.boton2 .btn-large, .boton7 .btn-large{
@@ -57,15 +54,18 @@ a.waves-effect.waves-light.btn-large {
 }
 
 .boton2 a{
-    padding-top: 3vh;;
+    padding-top: 12vh;
 }
 
-.boton7 a{
-    padding-top: 5vh;
+.boton7 a ul li{
+    font-size: .7em;
 }
 
 .sesion-online {
     font-size: .8em;
+    display: block;
+}
+.card-title {
     display: block;
 }
 
