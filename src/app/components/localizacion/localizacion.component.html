@@ -1,55 +1,91 @@
 <section class="container animated fadeIn slow">
 
-    <div class="row">
-        <div class="col s12 center-align">
-            <h1>Despacho de {{ localizacion.title }}</h1>
-        </div>
-    </div>
-    <div class="hide-on-small-only">
-        <div class="row">
-            <div class="col s12">
-                <h2 class="center-align">Consulta</h2>
-                <p class="flow-text">
-                    {{localizacion.despachoDesc}}
-                </p>
-                <div class="col s12 m9 offset-m2" [ngSwitch]="localizacion.title">
-                    <div *ngSwitchCase="'Colmenar'">
 
-                        <app-slider [localization]="localizacion.title"></app-slider>
-
-                    </div>
-                    <div *ngSwitchCase="'Miraflores'">
-
-                        <app-slider [localization]="localizacion.title"></app-slider>
-
-                    </div>
-
-                    <figure *ngSwitchDefault>
-                        <img class="responsive-img valign-wrapper" src="{{ localizacion.fotos }}" alt="Terapia {{ localizacion.title }}">
-                    </figure>
-
+    <div *ngIf="localizacion.title === 'Consulta a domicilio'; else elseLocation">
+        <div>
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h1>Consulta a domicilio</h1>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12">
-                <h2 class="center-align">Ubicación</h2>
-                <p class="flow-text"> {{ localizacion.ubicacionDesc}}</p>
             </div>
             <div class="row">
                 <div class="col s12">
-                    <iframe [src]="localizacion.ubicacion | safeUrl" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <p class="flow-text">
+                        {{localizacion.despachoDesc}}
+                    </p>
+                    <div class="col s12 m9 offset-m2" [ngSwitch]="localizacion.title">
+                        <div *ngSwitchCase="'Colmenar'">
+
+                            <app-slider [localization]="localizacion.title"></app-slider>
+
+                        </div>
+                        <div *ngSwitchCase="'Miraflores'">
+
+                            <app-slider [localization]="localizacion.title"></app-slider>
+
+                        </div>
+
+                        <figure *ngSwitchDefault>
+                            <img class="responsive-img valign-wrapper" src="{{ localizacion.fotos }}" alt="Terapia {{ localizacion.title }}">
+                        </figure>
+
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <ng-template #elseLocation>
         <div class="row">
-            <div class="col s12">
-                <h2 class="center-align">Terapia</h2>
-                <p class="flow-text">{{ localizacion.terapiaDesc }}</p>
+            <div class="col s12 center-align">
+                <h1>Despacho de {{ localizacion.title }}</h1>
             </div>
         </div>
-    </div>
-    <div class="row hide-on-med-and-up center-align">
+        <div class="hide-on-small-only">
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="center-align">Consulta</h2>
+                    <p class="flow-text">
+                        {{localizacion.despachoDesc}}
+                    </p>
+                    <div class="col s12 m9 offset-m2" [ngSwitch]="localizacion.title">
+                        <div *ngSwitchCase="'Colmenar'">
+
+                            <app-slider [localization]="localizacion.title"></app-slider>
+
+                        </div>
+                        <div *ngSwitchCase="'Miraflores'">
+
+                            <app-slider [localization]="localizacion.title"></app-slider>
+
+                        </div>
+
+                        <figure *ngSwitchDefault>
+                            <img class="responsive-img valign-wrapper" src="{{ localizacion.fotos }}" alt="Terapia {{ localizacion.title }}">
+                        </figure>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="center-align">Ubicación</h2>
+                    <p class="flow-text"> {{ localizacion.ubicacionDesc}}</p>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <iframe [src]="localizacion.ubicacion | safeUrl" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="center-align">Terapia</h2>
+                    <p class="flow-text">{{ localizacion.terapiaDesc }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row hide-on-med-and-up center-align">
         <div class="row">
             <div class="col s12">
                 <ul class="collapsible popout" data-collapsible="accordion">
@@ -104,7 +140,8 @@
                 </ul>
             </div>
         </div>
-    </div>
+        </div>
+    </ng-template>
 </section>
 <app-fixed-botton></app-fixed-botton>
 <app-footer></app-footer>

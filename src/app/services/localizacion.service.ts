@@ -57,6 +57,13 @@ export class LocalizacionService {
         terapiaDesc: `Atendemos terapia individual para adultos, adolescentes y terapia de pareja. La terapia infantil en la actualidad se
          realiza en la consulta de Miraflores de la Sierra, dada sus características especiales y los materiales terapéuticos específicos
          necesarios para su desarrollo.`
+    }, {
+        title: 'Consulta a domicilio',
+        despachoDesc: `Si desea concertar consulta a domicilio llame al 644435941. Prestamos servicio en el área de Madrid capital y municipios de la Sierra Norte.`,
+        fotos : '../assets/img/consultaDomicilio.png',
+        ubicacion: ``,
+        ubicacionDesc: ``,
+        terapiaDesc: ``
     }
 ];
 
