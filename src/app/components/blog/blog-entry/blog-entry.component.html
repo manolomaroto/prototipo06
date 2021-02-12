@@ -14,8 +14,13 @@
 
     <div class="row">
         <time class="col s3 m2" [dateTime]="post.createdAt">{{post.createdAt}}</time>
+        <time class="col s5 m4" *ngIf="post.readingTime">{{ post.readingTime }}</time>
         <div class="author col s4 m3" [innerHTML]="post.author"></div>
-        <a class="waves-effect waves-light btn" (click)="cambiarEstilos()">{{ textButton }}</a>
+    </div>
+    <div class="row">
+        <div class="col s3 offset-s9">
+            <a class="waves-effect waves-light btn" (click)="cambiarEstilos()">{{ textButton }}</a>
+        </div>
     </div>
 </div>
 
