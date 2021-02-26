@@ -13,6 +13,7 @@ import { AvisoLegalComponent } from './aviso-legal/aviso-legal.component';
 import { AvisoCookiesComponent } from './aviso-cookies/aviso-cookies.component';
 import { BlogEntryComponent } from './blog/blog-entry/blog-entry.component';
 import { BlogComponent } from './blog/blog.component';
+import { BlogListComponent } from './blog/blog-list/blog-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BlogComponent } from './blog/blog.component';
     AvisoLegalComponent,
     AvisoCookiesComponent,
     BlogEntryComponent,
-    BlogComponent
+    BlogComponent,
+    BlogListComponent
   ],
   imports: [
     CommonModule,

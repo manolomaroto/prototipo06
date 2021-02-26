@@ -1,0 +1,20 @@
+
+
+<div class="col m12">
+  <h2 class="header">{{ post.title}}</h2>
+  <div class="card horizontal">
+    <div class="card-image">
+      <img class="responsive-img image-entry" [src]="post.image" alt="{{post.brief}}">
+    </div>
+    <div class="card-stacked">
+      <div class="card-content">
+        <time  [dateTime]="post.createdAt">{{post.createdAt}}</time>
+          <div *ngIf="post.readingTime">{{ post.readingTime }}</div>
+          <div [innerHTML]="post.author"></div>
+      </div>
+      <div class="card-action">
+        <a [routerLink]="['/blog/' + post.id]">Seguir leyendo</a>
+      </div>
+    </div>
+  </div>
+</div>
