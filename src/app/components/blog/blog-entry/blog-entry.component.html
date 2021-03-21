@@ -1,14 +1,14 @@
-<div class="row post-header animated fadein slow">
+<section class="container animated fadeIn slow">
+<div class="row">
     <h1 [innerHTML]="post.title"></h1>
     <div class="row">
-        <div [ngClass]="{'col m4 s12': !styleExp}">
+        <div>
             <figure >
                 <img class="responsive-img image-entry" [src]="post.image" alt="{{post.brief}}">
             </figure>
         </div>
-        <div [ngClass]="{'col m8 s12': !styleExp}">
-            
-            <p class="flow-text post-entry" [innerHTML]="post.content" [ngClass]="{'post-entry-complite': styleExp}"></p>
+        <div> 
+            <p class="flow-text post-entry" [innerHTML]="post.content" ngClass="post-entry-complite"></p>
         </div>
     </div>
 
@@ -19,9 +19,11 @@
     </div>
     <div class="row">
         <div class="col s3 offset-s9">
-            <a class="waves-effect waves-light btn" (click)="cambiarEstilos()">{{ textButton }}</a>
+            <a class="waves-effect waves-light btn" [routerLink]="['/blog']" >Volver</a>
         </div>
     </div>
 </div>
-
+</section>
+<app-fixed-botton></app-fixed-botton>
+<app-footer></app-footer>
     

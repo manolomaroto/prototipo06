@@ -9,7 +9,7 @@ import { BlogService } from '../../../services/blog.service';
 })
 export class BlogEntryComponent implements OnInit {
   post: any = [];
-  styleExp = false;
+  styleExp = true;
   textButton = 'Seguir leyendo';
 
   constructor(
@@ -25,11 +25,6 @@ export class BlogEntryComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  cambiarEstilos() {
-    this.styleExp = !this.styleExp;
-    this.styleExp === false ? this.textButton = 'Seguir leyendo' : this.textButton = 'Cerrar';
   }
 
 }
