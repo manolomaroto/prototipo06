@@ -1,7 +1,7 @@
 
 
 <div class="col m12">
-  <h2 class="header">{{ post.title}}</h2>
+  <h2 class="header center-align"><a [routerLink]="['/blog/' + post.id]">{{ post.title}}</a></h2>
   <div class="card horizontal">
     <div class="card-image">
       <img class="responsive-img image-entry" [src]="post.image" alt="{{post.brief}}">
