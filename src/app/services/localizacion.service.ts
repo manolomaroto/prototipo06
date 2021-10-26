@@ -56,6 +56,7 @@ export class LocalizacionService {
     constructor() {}
 
     getLocalizacion( idx: string) {
+        console.log(idx)
         return this.localizaciones[idx];
     }
 }
